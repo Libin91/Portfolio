@@ -1,0 +1,63 @@
+nav {
+    background:#262626;
+    width: 100%;
+    min-height: 30px;
+    padding: 10px;
+    text-align: center;
+}
+nav ul {
+    justify-content: space-around;
+    list-style-type:none;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 5px 10px 10px 10px; 
+}
+
+a {
+   
+   color: white;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+a:hover {
+    color: #212121;
+    text-decoration: none;
+}
+
+
+header {
+    background: no-repeat center/100% url(https://p0.pikist.com/photos/514/968/black-and-white-black-classic-dust-dusty-keyboard-keys-machine-old.jpg);
+    margin:0 auto;
+    padding:5px 10px 10px 10px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 100px;
+}
+
+header h2 {
+    font-size: 75px;
+}
+
+.prof-photo {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 350px;
+    border-radius: 50%;
+    border: .3px solid white;
+}
+
+body {
+    background: #d6d6c2;
+}
+p {
+    font-size: 20px;
+}
