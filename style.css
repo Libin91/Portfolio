@@ -1,63 +1,115 @@
-nav {
-    background:#262626;
+.main-nav {
     width: 100%;
     min-height: 30px;
     padding: 10px;
+    background: #0288D1;
     text-align: center;
-}
-nav ul {
+  }
+  .nav {
+    
     justify-content: space-around;
-    list-style-type:none;
+    list-style-type: none;
     margin: 0 auto;
     padding: 0;
+    color: white;
     font-size: 20px;
-}
-
-nav ul li {
-    display: inline;
+  }
+  
+  .nav li {
     padding: 5px 10px 10px 10px; 
-}
-
-a {
-   
-   color: white;
-   padding: 14px 16px;
-   text-decoration: none;
-}
-a:hover {
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
     color: #212121;
     text-decoration: none;
-}
-
-
-header {
-    background: no-repeat center/100% url(https://p0.pikist.com/photos/514/968/black-and-white-black-classic-dust-dusty-keyboard-keys-machine-old.jpg);
-    margin:0 auto;
-    padding:5px 10px 10px 10px;
+  }
+  .intro {
+    background: #03A9F4;
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
     color: white;
-}
+    
+  }
+  .intro h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .intro h2 {
+    font-size: 40px;
+  }
 
-header h1 {
-    font-size: 100px;
-}
-
-header h2 {
-    font-size: 75px;
-}
-
-.prof-photo {
+  .profile-img {
     margin-top: 15px;
     margin-bottom: 25px;
     width: 250px;
-    height: 350px;
+    height: 310px;
     border-radius: 50%;
     border: .3px solid white;
-}
-
-body {
-    background: #d6d6c2;
-}
-p {
-    font-size: 20px;
-}
+  }
+ 
+  
+  .portfolio {
+    background: #B3E5FC;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    
+  }
+  .portfolio h1 {
+    font-size: 50px;
+    padding-bottom: 30px;
+    
+  }
+  .portfolio ul {
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .portfolio li {
+    display: inline-block;
+    padding: 5px 30px 5px 30px;  
+  }
+  .contact {
+    background: #03A9F4;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px
+  }
+  
+  .contact-form {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  footer {
+    background: #0288D1;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:50px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  footer ul li {
+    display: inline-block;
+  }
+  a.social {
+    display: inline-block;
+  }
