@@ -6,60 +6,80 @@
      <meta name="keywords" content="business, code, developer">
      <meta name="viewport" content="width=device-width,initial-scale=1.0">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Roboto:wght@300" rel="stylesheet">
      <link rel="stylesheet" href="style.css">
-        <title>Asha's Personal Profile</title>
-          
+
+    <title>Asha's Personal Profile</title>
+
     </head>
+
+    <body>
+
     <header>
-        <div class="main-nav">
-          <ul class="nav">
-            <li><a href="#top">About Me</a></li>
-            <li><a href="#middle">Portfolio</a></li>
-            <li><a href="#bottom">Contact Me</a></li>
+
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+        <nav class="main-nav">
+          <ul class="nav-item">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
           </ul>
-          </div>
+        </nav>
+
         </header>
         
-      <body>
-        <div class="intro">
-            <div class="intro">
-                <img class= "profile-img"id="top"src="prof.pic.jpg">
-        <h1> Asha Fidow 
-          <h2>Junior front web developer and graphic designer.<br /> I like to create beautiful things.</h2>
-       </h1>
-        </div>
-        
-        <div class="portfolio">
-        <h1 id="middle">Portfolio</h1>
-        <ul>
-          <li><img src="http://placeimg.com/340/180/tech" alt="portfolio1"></li>
-          <li><img src="http://placeimg.com/340/180/tech" alt="portfolio2"></li>  
-        </ul>
-        </div>
-       
-        <div class= "contact">
-        <h1 id="bottom">Contact Me</h1>
-        </div>
-        <div class="contact-form">
-        <h2>Name</h2>
-        <input type="text"class="form-control" placeholder="Name" required>
-        <h2>Surname</h2>
-        <input type="text"class="form-control" placeholder="Surname" required>
-        <h2>Email</h2>
-        <input type="email"class="form-control" placeholder="Email" required>
-        <h2>Message</h2>
-          <textarea class="form-control" rows="5" placeholder="Message"id="comment"></textarea>
-        <button type="submit">Send</button>
-        </div>
-        </body>
       
-      <footer>
-        <h4>Find me at:
-          <ul>
-            <li><a href="https://github.com/Libin91" target="_blank"class="social github"> GitHub</a></li>
-           
-            <li><a href="https://twitter.com/Rani_Ai4" target="_blank"class="social twitter"> Twitter</a></li>
+      <section class="intro" id="home">   
+        <h1 class="section__title--intro">
+          Hi, I am <strong>Asha Fidow</strong>
+        </h1>
+        <p class="section__subtitle--intro">Junior Full Stack Developer</p>
+        <img src="profilepic.jpg" alt="asha's photo" class="intro__img">
+      </section>
+        
+
+      <section class="about" id ="about">
+        <h2 class="section__title--about">Who I am</h2>
+        <div class="about__body">
+          <p>I am a graduate from Black Codher, a full stack coding bootcamp based in the West Midlands.
+             My background is in Education, and I seek to incorporate this passion of mine, with my newfound interest, Tech.
+             The technologies I learnt at Black Codher are HTML, CSS, Javascript, React, Node.js and MongoDB.</p>
+
+        </div>
+
+      </section>
+
+
+      <section class="portfolio" id="portfolio">
+        <h2 class="section__title--portfolio">My Portfolio</h1>
+        <div class="portfolio-items">
+          <p>Baro Af-Soomaali, a MERN stack app</p>
+        <a href="#" class="portfolio-item01"></a>
+          <img src="http://placeimg.com/340/180/tech" alt="portfolio1">
+          <p>My Bookcase, a React app</p>
+        <a href="#" class="portfolio-item02"></a>
+            <img src="http://placeimg.com/340/180/tech" alt="portfolio2">
+            <p>Quiz Game, built with Javascript</p>
+          <a href="#" class="portfolio-item03"></a>
+            <img src="" alt="portfolio3"  >
+        </div>
+
+      </section>
+       
+      <footer id="contact">
+        <a href="mailto:a.a.fidow@gmail.com" class="footer-link-email">a.a.fidow@gmail.com</a>
+        
+          <ul class="socials">
+            <li><a href="https://github.com/Libin91" target="_blank" class="social github"> GitHub</a></li>
+            <li><a href="https://linkedin.com/in/asha-fidow" target="_blank" class="social linkedin">LinkedIn</a></li>
+            <li><a href="https://twitter.com/AshaCodes" target="_blank" class="social twitter"> Twitter</a></li>
           </ul>
           
-        </h4>
+        
       </footer>

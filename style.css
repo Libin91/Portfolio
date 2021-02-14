@@ -1,115 +1,162 @@
-.main-nav {
-    width: 100%;
-    min-height: 30px;
-    padding: 10px;
-    background: #0288D1;
-    text-align: center;
-  }
-  .nav {
-    
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    color: white;
-    font-size: 20px;
-  }
-  
-  .nav li {
-    padding: 5px 10px 10px 10px; 
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  a:hover {
-    color: #212121;
-    text-decoration: none;
-  }
-  .intro {
-    background: #03A9F4;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    color: white;
-    
-  }
-  .intro h1 {
-    font-size: 50px;
-    margin-bottom: 15px;
-  }
-  .intro h2 {
-    font-size: 40px;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-  .profile-img {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    width: 250px;
-    height: 310px;
-    border-radius: 50%;
-    border: .3px solid white;
+:root {
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Lato', sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #e6f0ff;
+  --clr-dark:#303030;
+  --clr-accent: #0288D1;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem
+
   }
- 
-  
-  .portfolio {
-    background: #B3E5FC;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 100px;
-    
-  }
-  .portfolio h1 {
-    font-size: 50px;
-    padding-bottom: 30px;
-    
-  }
-  .portfolio ul {
-    justify-content: space-around;
+}
+
+body {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+section {
+  padding:5em 2em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {font-size: var(--fs-h1);}
+h2 {font-size: var(--fs-h2);}
+h3 {font-size: var(--fs-h3);}
+
+.section__title {
+  margin-bottom: .25em;
+
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+  display: block;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro{
+  background: var(--clr-accent);
+  font-family: var(--ff-secondary);
+  padding: .25em 1em;
+  margin-bottom: 1em;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro__img {
+  box-shadow: var(--bs);
+}
+
+@media(min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
     margin: 0 auto;
-    padding: 0;
+    grid-column-gap: 1em;
+    grid-template-areas: 
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+
   }
-  .portfolio li {
-    display: inline-block;
-    padding: 5px 30px 5px 30px;  
-  }
-  .contact {
-    background: #03A9F4;
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px
-  }
-  
-  .contact-form {
-    width: 400px;
-    margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  
-  footer {
-    background: #0288D1;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left:50px;
-    color: white;
-    font-size: 30px;
-    text-align: center;
-  }
-  
-  footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  footer ul li {
-    display: inline-block;
-  }
-  a.social {
-    display: inline-block;
-  }
+}
+
+.intro__img {
+  grid-area: img;
+  min-width: 250px;
+  position: relative;
+  z-index: 2;
+}
+
+.section__subtitle--intro {
+  align-self: start;
+  grid-column: -1/1;
+  grid-row: 2;
+  text-align: right;
+  position: relative;
+  left: -1.5em;
+  width: calc(100% + 1.5em);
+}
+
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #01081c;
+  color: var(--clr-light);
+  text-align: center;
+
+}
+
+.about__body {
+  justify-content: center;
+}
+
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300, 1fr));
+
+}
+
+.port
+
+
+
+
+
+
+
+
+
+
+
+
